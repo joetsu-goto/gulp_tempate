@@ -1,0 +1,1 @@
+(()=>{"use strict";var e=JSON.parse('{"e":["大吉","吉","中吉","小吉","末吉","凶","大凶"]}').e,t=function(){var t,n="あなたの運勢は「"+(t=Math.floor(Math.random()*e.length),e[t]+"」です！！");alert(n)};document.addEventListener("DOMContentLoaded",(function(){document.querySelector(".inner__text-btn").addEventListener("click",t,!1)}),!1)})();

@@ -1,0 +1,34 @@
+{
+    "data": {
+        "header": {
+            "title":"クモのようにコツコツと 〜別館〜",
+            "text": "イイダリョウのメタ言語実験室！！！！！"
+        },
+        "main": {
+            "title":"メタ言語同時コンパイル（EJS、Sass(SCSS)、TypeScript）",
+            "lede": "HTMLテンプレートエンジンとAltCSSとALtJSを同時にコンパイルする！！",
+            "link": "別ページへ"
+        },
+        "inner": [
+            {
+            "title":"EJSでJSONデータを読み込む",
+            "text": "コンテンツ部分を外部のJSONデータから読み込むことができる。<br>gulpfile.jsでfsモジュールを使って設定している。"
+            },
+            {
+            "title":"Sass(SCSS)のネスト（階層化）",
+            "text": "SCSSもdivのネストの階層化ができる。この段落は<em class='inner__text-em'>ネスト</em>でスタイルを当てている。<br>ん？この書き方はLESSとほぼまったく同じだ。<br><span class='inner__text--bikou'>インデントについても厳密でじゃでなくても解釈してくれるようだ（？）</span>"
+            },
+            {
+            "title":"Sass(SCSS)の親セレクタ参照",
+            "text": "おそらくLESSにはないSCSS専用の機能。ネストして「&」に擬似要素を付けると親セレクタを参照できる<br><span  class='inner__text-bikou'>この尾行欄につけている「※」印は「.bikou:before」ではなく「&:before」だけで済んでいる。 </span>"
+            },
+            {
+            "title":"TypeScriptで作ったおみくじ",
+            "text": "<button class='inner__text-btn'>おみくじを引く！</button>"
+            }
+        ],
+        "footer": {
+            "text":"© 2020 イイダリョウ"
+        }
+    }
+}

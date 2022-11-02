@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>別ページ</title>
+	<meta name="description" content="EJSでフィズバズる！">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<%- include('block/_header', {header: data.header}); %>
+<%- include('block/_other', {main: data.main, inner: data.inner}); %>
+<%- include('block/_footer', {footer: data.footer}); %>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<% var h1Title = '別ページ：EJSでフィズバス'; %>
+<% var h2Title = 'EJSでフィズバズる'; %>
+<% var count = 30; %>
+
+<main>
+    <section id="scss" class="main">
+        <h1 class="main__title"><%= h1Title %></h1>
+        <p class="main__lede">別ページもリロードされるかテストですと。</p>
+        <section id="nest" class="inner">
+            <h2 class="inner__title"><%= h2Title %></h1>
+            <p class="inner__text">EJSで変数、for文、if文を使ってフィズってバズってみた。</p>
+            <ul>
+            <% for (var i = 1; i < count+1; i++) { %>
+                <% if (i % 3 == 0 && i % 5 == 0) { %>
+                <li>フィズってバズった！</li>
+                <% } else if (i % 3 == 0) { %>
+                <li>フィズった！</li>
+                <% } else if (i % 5 == 0) { %>
+                <li>バズった！</li>
+                <% } else { %>
+                <li><%= i %></li>
+                <% } %>
+            <% } %>
+            </ul>
+        </section>
+        <p class="main__text"><a href="index.html">Topへ</a></p>
+        </section>
+    </section>
+</main>

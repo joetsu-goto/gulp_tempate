@@ -72,12 +72,6 @@ const compileEjs = (done) => {
 // sassコンパイル
 const compileSass = (done) => {
     gulp.src(srcScssFiles)
-
-        .pipe(
-            dartSass({
-                outputStyle: "compressed",
-            })
-        )
         .pipe(
             plumber({
                 errorHandler: notify.onError("Error: <%= error.message %>"),
